@@ -14,7 +14,7 @@ import java.util.List;
 @Service("FakeProductService")
 public class FakeStoreProductServiceImpl implements ProductService{
 
-    private RestTemplateBuilder restTemplateBuilder;
+    private final RestTemplateBuilder restTemplateBuilder;
     private String url = "https://fakestoreapi.com/products/1";
 
     @Autowired
